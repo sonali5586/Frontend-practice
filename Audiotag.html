@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+    <html>
+        <head> 
+    <title>
+            Audio tag
+        </title>
+        <script>
+         function myFunction(){
+                document.getElementById("heading").innerHTML="";
+         var x=   document.getElementById("radioButt");
+
+         for(i = 0; i < x.length; i++) { 
+                  
+                  if(x[i].type="radio") { 
+                    
+                      if(x[i].checked) 
+                          document.getElementById("heading").innerHTML 
+                                  += x[i].name + " Value: " 
+                                  + x[i].value + "<br>"; 
+                  } 
+       
+             console.log(x)
+         }
+        }
+        </script>
+        </head>
+    
+    <body>
+        <h1 id="heading"></h1>
+
+        <!-- <audio controls  >
+            <source src="C:\Users\User\Downloads\cheapThrills.mp3" type="audio/mp3">
+        </audio >
+        <video width="200px" controls > <source src="Peppa Pig.mp4" type="video/mp4" ></video> -->
+       <form class="id">
+           Gender:-<input type="radio" name="Gender" value="Male" id="radioButt">Male
+           <input type="radio" name="Gender" value="Female" id="radioButt">female
+           
+           </form>
+           
+<button onclick="myFunction()">Try it</button>
+       </form>     
+    </body>
+</html> 

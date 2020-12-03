@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        validation and fieldset
+    </title>
+    </head>
+    <body>
+    <form>
+        <fieldset>
+    
+            <legend>aboutus:</legend>
+            <label>FirstName :</label>
+            <input type="text" id="fname"><br><br>
+            <label>LastName :</label>
+            <input type="text" id="lname"><br><br>
+        </fieldset>
+
+            <button onclick="displayData()">Display info</button>
+        
+    </form>
+    
+    <p id="DisplayFname" style="color:red; font-size:15px">hello</p>
+    <p id="DisplayLname" style="color: blue;font-size: 15px">hi</p>
+</body>
+
+
+    <script>
+        function displayData() {
+            var fName = document.getElementById("fname").value
+            document.getElementById("DisplayFname").innerHTML = "Firstname :" + fName
+
+
+            var lName = document.getElementById("lname").value
+            document.getElementById("DisplayLname").innerHTML = "Lastname : " + lName
+
+        }
+    </script>
+
+
+</html>

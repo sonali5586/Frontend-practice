@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            function 
+            Hoisting
+        </title>
+       </head>
+        <body>
+            <h1 id="v">Heading</h1>
+            <script>
+                function add(num1,num2) {
+                    
+                    var result=num1+num2
+                  
+                    return result;
+                   
+                }
+     
+               
+             var total=function(num1,num2){
+                 var result=num1+num2
+                  return result;
+             }
+
+             var x=total(10,20)
+            console.log(total)
+            //document.write(total)
+    
+             document.getElementById("v").innerHTML=x
+            </script>    
+            
+        </body>
+
+       
+
+    
+</html>

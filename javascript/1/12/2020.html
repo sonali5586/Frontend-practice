@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Marks Document precentage </title>
+<script src="studentform.js"></script>
+</head>
+<body>
+    <form>
+        <label>Student full Name:- </label>
+        <input type="text" id="fname" > <br>1
+
+<label> Choose a Stream-:</label><br>
+
+<select id="stream">
+  <option value="Art">Art</option>
+  <option value="commerce">commerce</option>
+  <option value="Science">Science</option>
+  
+</select>
+         <br><br>
+         <label>Subject-:</label><br><br> 
+        <label>Science</label>
+        <input type="text"  id="SciMarks"> <br><br>
+        <label>Physics</label>
+        <input type="text" id="Physicsmarks"><br><br>
+        <label>Chemistry</label>
+        <input type="text"  id="Chemistrymarks"><br><br>
+        <label>Maths</label>
+        <input type="text"  id="Mathsmarks"><br><br>
+        <label>Biology</label>
+        <input type="text" id="Biologymarks"><br><br>
+        <label>zoology</label>
+        <input type="text" id="zoologymarks"><br><br>
+
+    
+        
+    </form>
+    <button value="submit">Submit</button>
+    <button onclick="displayData()">Display info</button>
+
+    
+    <input type="button" name="" value="Showpercentage" onclick="calcy()">
+
+    <p id="DisplayFname" style="color:red; font-size:15px"></p>
+    <p id="stream-name"></p>
+    <br><br>
+    <p id="DisplaysMarks">hi</p> 
+    <p id="Displayphy">how</p> 
+    <p id="diva">many</p> 
+    <p id="Rutu">where</p> 
+    <p id="Run">when</p> 
+    <p id="Ram">what</p> 
+    <p id="grade"></p>
+    <div class="showdata">
+
+    <p id="showdata"></p>
+    <p id="data3"></p>
+    <p id="data"></p>
+    <p id="total-marks"></p>
+    </div>
+</body>
+
+</html>

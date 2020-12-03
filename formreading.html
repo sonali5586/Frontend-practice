@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html input type
+    </title>
+    <script>
+ 
+
+    </script>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Aboutus:</legend>
+            <label>FirstName :</label>
+            <input type="text" id="fname"><br><br>
+
+            <label>LastName :</label>
+            <input type="text" id="lname"><br><br>
+
+
+            <label>Enter mail Id:</label>
+            <input type="email" id="mail"><br><br>
+
+            <label>Enter tel number:</label>
+            <input type="tel" id="tel">
+            <br><br>
+
+            <label>Enter password: </label>
+            <input type="password" id="psw">
+            <br><br>
+
+            <label>Date</label><br>
+            <input type="Date" id="mydate">
+            <br><br>
+
+            <label>Address</label>
+            <input type="text" id="address">
+            <br><br>
+
+            <label>Search</label>
+            <input type="search" id="search">
+            <br><br>
+
+            <label>URL</label>
+            <input type="url" id="url">
+            <br><br>
+
+            <label>Cheack Box</label>
+            <input type="checkbox" id="Cheack" value="male">
+            <br><br>
+
+            <label for="tentacles">Number of tentacles (10-100):</label>
+
+            <input type="number" id="tentacles" name="tentacles" min="10" max="100">
+            <br><br>
+
+            <label>DisplayTime</label>
+            <input type="time" name="time" id="time">
+            <br><br>
+
+            <label>Displaycolor</label>
+            <input type="color" name="color" id="color">
+            <br><br>
+        </fieldset>
+    </form>
+
+
+<button onclick="displayData()">Display info</button>
+
+
+<p id="DisplayFname" style="color:red; font-size:15px">hello</p>
+<p id="DisplayLname" style="color: blue;font-size: 15px">hi</p>
+<p id="Displayemail" style="color: crimson;font-size:15px">how r you</p>
+<p id="Displaytel" style="color: darkmagenta;font-size: 15px">hey</p>
+<p id="Displaypsw" style="color: darkorange;font-size: 15px">hello</p>
+<p id="displayaddress" style="color: forestgreen;size:15px">fffff</p>
+<p id="displayDate">date</p>
+<p id="Displaysearch">Search</p>
+<p id="DisplayURL">URL</p>
+<p id="DisplayCheckBox">Box</p>
+<p id="DisplayNumber">Number</p>
+<p id="DisplayTime">Time</p>
+<p id="Displaycolor">color</p>
+<p id="text" style="display:none">Checkbox is CHECKED!</p>
+</body>
+<script>
+    function displayData() {
+        var fName = document.getElementById("fname").value
+        document.getElementById("DisplayFname").innerHTML = "Firstname :" + fName
+
+        var lName = document.getElementById("lname").value
+        document.getElementById("DisplayLname").innerHTML = "Lastname : " + lName
+
+        var mail = document.getElementById("mail").value
+        document.getElementById("Displayemail").innerHTML = "mail : " + mail
+
+        var tel = document.getElementById("tel").value
+        document.getElementById("Displaytel").innerHTML = "tel :" + tel
+
+        var psw = document.getElementById("psw").value
+        document.getElementById("Displaypsw").innerHTML = "psw : " + psw
+
+        var date = document.getElementById("mydate").value
+        document.getElementById("displayDate").innerHTML = "date :" + date
+
+        var address = document.getElementById("address").value
+        document.getElementById("displayaddress").innerHTML = "address :" + address
+
+        var Search = document.getElementById("search").value
+        document.getElementById("Displaysearch").innerHTML = "search :" + Search
+
+        var s = document.getElementById("url").value
+        document.getElementById("DisplayURL").innerHTML = "url :" + s
+
+        var B = document.getElementById("Cheack").value
+        document.getElementById("DisplayCheckBox").innerHTML = " DisplayCheckBox :" + B
+
+
+        var num = document.getElementById("tentacles").value
+        document.getElementById("DisplayNumber").innerHTML = "DisplayNumber :" + num
+
+        var time = document.getElementById("time").value
+        document.getElementById("DisplayTime").innerHTML = "Displaytime :" + time
+
+        var color = document.getElementById("color").value
+        document.getElementById("Displaycolor").innerHTML = "Displaycolor: " + color
+    }
+</script>
+
+</html>

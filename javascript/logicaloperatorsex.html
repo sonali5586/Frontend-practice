@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//logical operators
+// there are 3 logical operators - and operator &&
+//                                 or operator ||
+//                                 not operator !
+
+var a = 5;
+var b = 7;
+var c = "7";
+
+// AND operator &&
+// In add operator 
+
+// It gives result true only and only when both of operands value is true
+// One of the operand value is False result is False
+
+
+// True  && True = True
+// True && False = False
+// False && False = False
+// False && True - False
+
+
+console.log(true && true);
+console.log(a == 6 && false);
+console.log(a==5 && b<0);
+console.log (a<7 && b>=7);
+console.log(a==7 && b===7);
+
+// OR operator ||
+
+// In OR operator 
+
+// It gives result true if one of the operand value is true
+// One of the operand value is True result is True
+
+
+// True  && True = True
+// True && False = True
+// False && False = False
+// False && True - True
+
+console.log(true || false);
+console.log (true || true);
+console.log(a==6 || b<0);
+console.log(a>b || b>0);
+console.log(a==5 || b == 7);
+
+
+// Logical Not operator   !
+// In logical not operator the result is opposite of the condition value.
+// i.e   !true = false
+//       !false= true
+
+console.log(!false);
+console.log(!true);
+
+console.log(!(a==7));
+console.log(a==7 && b<0);
+console.log(!(a==7 && b<0));
+
+console.log(!((a==7 || b>=7) && a==5));
+
+
+console.log(!(a>=5 && b>8) || !(a<=5 && b ===7));
+
+console.log((b<=7) || !(b==c));
+console.log((a>=5 && b<=7));
+console.log(((a<=5 || b>=7) && (b===c && b>a)));
+
+console.log(c<=7);  //the value will be true because c ="7" here it just checks the value and equality comparison 
+
+            //    (true || true) && (false && true)
+            //    true && false
+            //    false
+
+            console.log(c===7 && true);
+
+                console.log(true==1);
+                  console.log(true ===1);
+
+                  var x = "dog";
+                  var y = "cat";
+                  var z = "dog";
+
+                  console.log(x==y);
+                  console.log(x=="dog");
+
+                  console.log(x<y);
+                  console.log(x=="cat");
+                  console.log(x==z);
+                  console.log(x=="dog" && true);
+                  console.log("dog" && x==z);
+                  console.log("dog" || x==z)
+                  console.log(a==z || "");  //when we use OR operator with null string it considers the last evaluated value. 
+                    console.log("" || x==z);
+    
+    //create a form where you enter details of a student
+    // name 
+    // stream
+    // marks of 5 subjects
+
+    //Display output where it will display (with dialog box and on webpage too) -
+    // total marks obtained
+    // percentage
+    // grade -
+    // grade 1 60-70%
+    // grade 2 50-60%
+    //grade 3 40-50%
+
+
+    </script>
+     
+     
+</body>
+</html>
